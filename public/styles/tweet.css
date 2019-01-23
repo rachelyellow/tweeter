@@ -1,0 +1,17 @@
+.tweet header {
+  position: relative;
+  height: 50px;
+  border: 2px solid #DCDCDC;
+  border-radius: 5px;
+  padding: 10px;
+  background-color: #F2F1F1;
+}
+
+.thumbnail {
+  height: 50px;
+  width: 50px;
+}
+
+.tweet h3 {
+  display: inline-block;
+}

@@ -30,25 +30,27 @@ const tweetsRoutes = require("./routes/tweets")(DataHelpers);
 app.use("/tweets", tweetsRoutes);
 
 
-app.post("/tweets/", (req, res) => {
-  // let newTweet = {
-  //   user: {
-  //     name:
-  //     avatars: {
-  //       small:
-  //       regular:
-  //       large:
-  //     }
-  //     handle:
-  //   }
-  //   content: {
-  //     text: req.body.text
-  //   }
-  //   created_at:
-  // }
+// app.post("/tweets/", (req, res) => {
+//   console.log("123");
 
-  db.push(newTweet);
-})
+//   let newTweet = {
+//     user: {
+//       name:
+//       avatars: {
+//         small:
+//         regular:
+//         large:
+//       }
+//       handle:
+//     }
+//     content: {
+//       text: req.body.text
+//     }
+//     created_at:
+//   }
+
+//   db.push(newTweet);
+// })
 
 
 

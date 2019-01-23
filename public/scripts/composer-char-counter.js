@@ -4,9 +4,11 @@ $(document).ready(function() {
 
   tweetArea.on("keyup", function () {
     let tweetLength = $(this).val().length;
-    // if (tweetLength > 140) {
-
-    // }
+    if (tweetLength > 140) {
+      counter.addClass('red');
+    } else {
+      counter.removeClass('red');
+    }
     counter.text(140 - tweetLength);
   });
 
