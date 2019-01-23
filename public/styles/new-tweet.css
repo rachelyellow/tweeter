@@ -1,0 +1,27 @@
+section.new-tweet {
+  position: absolute;
+  border: 2px solid #DCDCDC;
+  border-radius: 5px;
+  padding: 10px;
+  background-color: #F2F1F1;
+  left: 2em;
+  right: 2em;
+  top: 50px;
+}
+
+section.new-tweet h2 {
+  border-bottom: 1px solid black;
+  margin-top: 0px;
+}
+
+section.new-tweet textarea {
+  position: relative;
+  padding: 5px;
+  width: 100%
+}
+
+section.new-tweet .counter {
+  position: relative;
+  float: right;
+  margin-top: 5px;
+}
