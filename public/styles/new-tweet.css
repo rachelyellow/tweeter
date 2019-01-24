@@ -23,6 +23,6 @@
   margin-top: 5px;
 }
 
-.new-tweet .red {
+.new-tweet .red, .error {
   color: red;
 }

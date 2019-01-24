@@ -11,22 +11,41 @@ $(document).ready(function() {
   const $form = $('form');
   $form.on('submit', function (event) {
     event.preventDefault();
-    $.ajax({
-      method: "POST",
-      url: "/tweets",
-      data: $form.serialize()
-    })
-      .done(function() {
-        alert(data);
-      });
+
+    const tweetMessage = $("form").serializeArray()[0].value;
+    const messageLengthError = $("<p>").addClass("error");
+
+    $('.error').remove();
+
+    if (tweetMessage === "") {
+
+      messageLengthError.text("Cannot post an empty tweet.");
+      $form.append(messageLengthError);
+
+    } else if (tweetMessage.length > 140) {
+
+      messageLengthError.text("The maximum tweet length is 140 characters.")
+      $form.append(messageLengthError);
+
+    } else {
+
+      $.ajax({
+        method: "POST",
+        url: "/tweets/",
+        data: $form.serialize()
+      })
+        .done(function() {
+          //clear the form and reload tweets
+          $form.find("textarea").val("")
+          loadTweets();
+        });
+    }
+
   });
 
 
-
-
-
   function loadTweets () {
-    const $form = $('form');
+    $("#tweets-container").empty();
     $.ajax('/tweets')
     .done((response) => {
       renderTweets(response)
@@ -39,16 +58,13 @@ $(document).ready(function() {
   loadTweets();
 
 
-
-
-
-
-
-
-
-
-
   function createTweetElement (data) {
+
+    function escape(str) {
+      var div = document.createElement('div');
+      div.appendChild(document.createTextNode(str));
+      return div.innerHTML;
+    }
 
     const html = `<article class="tweet">
       <header>
@@ -57,13 +73,12 @@ $(document).ready(function() {
         <p>${data.user.handle}</p>
       </header>
       <article class="tweet">
-        ${data.content.text}
+        ${escape(data.content.text)}
       </article>
       <footer>
         ${data.created_at}
       </footer>
     </article>`;
-    console.log($(html))
     return $(html);
 
   }
@@ -73,11 +88,10 @@ $(document).ready(function() {
 
     tweets.forEach(function(tweet) {
       let $tweet = createTweetElement(tweet);
-      $('#tweets-container').append($tweet);
+      $('#tweets-container').prepend($tweet);
     })
 
   }
-
 
 
 });
