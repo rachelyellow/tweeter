@@ -13,21 +13,24 @@ $(document).ready(function() {
     event.preventDefault();
 
     const tweetMessage = $("form").serializeArray()[0].value;
-    const messageLengthError = $("<p>").addClass("error");
+    const tweetErrorMessage = $(".error");
 
-    $('.error').remove();
+    tweetErrorMessage.text("");
+    tweetErrorMessage.slideUp();
 
     if (tweetMessage === "") {
 
-      messageLengthError.text("Cannot post an empty tweet.");
-      $form.append(messageLengthError);
+      tweetErrorMessage.text("Cannot post an empty tweet.");
+      tweetErrorMessage.slideDown('fast');
 
     } else if (tweetMessage.length > 140) {
 
-      messageLengthError.text("The maximum tweet length is 140 characters.")
-      $form.append(messageLengthError);
+      tweetErrorMessage.text("The maximum tweet length is 140 characters.")
+      tweetErrorMessage.slideDown('fast');
 
     } else {
+
+      tweetErrorMessage.slideUp();
 
       $.ajax({
         method: "POST",

@@ -26,3 +26,7 @@
 .new-tweet .red, .error {
   color: red;
 }
+
+.hide {
+  display: none;
+}

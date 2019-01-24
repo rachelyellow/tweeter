@@ -22,3 +22,14 @@
   left: 10px;
   bottom: 30px;
 }
+
+#nav-bar .button {
+  border: 1px solid black;
+  border-radius: 5px;
+  background-color: #baeeff
+  color: #e8fdff;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  float: right;
+  margin-top: 15px;
+}
