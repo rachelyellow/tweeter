@@ -1,35 +1,35 @@
-#tweetContainer {
+.tweetContainer {
   border: 1px solid #F3F3F3;
   border-radius: 5px;
 }
 
-#tweetContainer header {
+.tweetContainer header {
   background-color: #F5F5F5;
   height: 70px;
   padding: 10px;
 }
 
-#tweetContainer .thumbnail {
+.tweetContainer .thumbnail {
   float: left;
   height: 50px;
   width: 50px;
 }
 
-#tweetContainer h2 {
+.tweetContainer h2 {
   margin: auto;
   margin-left: 60px;
   margin-right: 0px;
   width: 40%;
 }
 
-#tweetContainer p {
+.tweetContainer p {
   width: 20%;
   margin-top: 5px;
   margin-right: 0px;
   float: right;
 }
 
-#tweetContainer .tweet {
+.tweetContainer .tweet {
   padding-left: 10px;
   padding-right: 10px;
   padding-top: 30px;
@@ -37,12 +37,18 @@
   /*border: 1px solid #DCDCDC;*/
 }
 
-#tweetContainer footer {
+.tweetContainer footer {
   border-top: 1px solid #F3F3F3;
   padding: 5px;
 }
 
-#tweetContainer:hover {
+/*#tweetContainer:hover {
   border: 1px solid #E8E8E8;
   border-radius: 5px;
-}
+
+  header {
+    background-color: #E8E8E8;
+    height: 70px;
+    padding: 10px;
+  }
+}*/

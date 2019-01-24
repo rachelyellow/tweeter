@@ -36,23 +36,23 @@
         <h2>Compose Tweet</h2>
         <form action="/tweets/" method="POST">
           <textarea name="text" placeholder="What are you humming about?"></textarea>
-          <input type="submit" value="Tweet">
+          <input id="submitTweet" type="submit" value="Tweet">
           <span class="counter">140</span>
         </form>
       </section>
 
-      <section id=tweetContainer>
-        <header>
-          <img class="thumbnail" src="https://vanillicon.com/7b89b0d8280b93e2ba68841436c0bebc_50.png">
-          <h2>User Name</h2>
-          <p>@user_tag</p>
-        </header>
+      <section id="tweets-container">
         <article class="tweet">
-          Tweet tweet!
+          <header>
+            <img class="thumbnail" src="https://vanillicon.com/7b89b0d8280b93e2ba68841436c0bebc_50.png">
+            <h2>User Name</h2>
+            <h4>@user_tag</h4>
+          </header>
+            <p>Tweet tweet!</p>
+          <footer>
+            X days ago
+          </footer>
         </article>
-        <footer>
-          X days ago
-        </footer>
       </section>
 
     </main>
