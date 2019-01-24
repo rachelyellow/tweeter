@@ -13,11 +13,11 @@ $(document).ready(function() {
     event.preventDefault();
     $.ajax({
       method: "POST",
-      url: "/tweets/",
+      url: "/tweets",
       data: $form.serialize()
     })
-      .done(function( msg ) {
-        alert( "Data Saved: " + msg );
+      .done(function() {
+        alert(data);
       });
   });
 
@@ -72,20 +72,21 @@ $(document).ready(function() {
 
 
 
+  function loadTweets () {
+    const $form = $('form');
+    $.ajax('/tweets')
+    .done((response) => {
+      console.log($form.serialize())
+      // renderTweets(xxx);
+    })
+    .fail(() => {
+      console.err('hello?')
+    })
+  }
 
 
 
 
-
-  //   $.ajax('/tweets')
-  //   .done((response) => {
-  //     jQuery.post()
-  //     console.log($form.serialize())
-  //   })
-  //   .fail(() => {
-  //     console.err('hello?')
-  //   })
-  // })
 
 
 
