@@ -1,5 +1,6 @@
 #nav-bar {
   position: fixed;
+  z-index: 10000;
   top: 0;
   left: 0;
   height: 80px;
@@ -34,7 +35,7 @@
   margin-top: 10px;
 }
 
-#nav-bar .button:hover {
+/* #nav-bar .button:hover {
   border: 1px solid black;
   border-radius: 5px;
   background-color: #e4f8ff
@@ -43,4 +44,4 @@
   padding: 20px 15px;
   float: right;
   margin-top: 10px;
-}
+} */
