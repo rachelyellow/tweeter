@@ -3,18 +3,6 @@
   border-radius: 5px;
 }
 
-#tweets-container footer {
-  border-bottom-left-radius: 5px;
-  border-bottom-right-radius: 5px;
-  border-top: #a3a3a3;
-  padding: 10px;
-}
-
-#tweets-container .tweet {
-  border-top: none;
-  border-bottom: #a3a3a3;
-}
-
 #tweets-container header {
   background-color: #F5F5F5;
   border-radius: 5px 5px 0px 0px;
@@ -43,13 +31,18 @@
   margin-right: 0px;
   float: right;
 }
+#tweets-container footer {
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  padding: 10px;
+}
 
 #tweets-container .tweet {
   padding-left: 10px;
   padding-right: 10px;
   padding-top: 30px;
   padding-bottom: 30px;
-  /*border: 1px solid #DCDCDC;*/
+  border-bottom: 1px solid rgb(221, 221, 221);
 }
 #tweets-container .tweets:hover {
   filter: brightness(85%);
