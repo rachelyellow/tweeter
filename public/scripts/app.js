@@ -77,7 +77,8 @@ $(document).ready(function() {
         ${escape(data.content.text)}
       </article>
       <footer>
-        ${data.created_at}
+        ${data.created_at.toString()}
+
       </footer>
     </article>`;
     return $(html);

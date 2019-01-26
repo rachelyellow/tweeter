@@ -27,21 +27,21 @@
 #nav-bar .button {
   border: 1px solid black;
   border-radius: 5px;
-  background-color: #baeeff
-  font-size: 2em;
-  color: #baeeff;
-  padding: 20px 15px;
+  background-color: #cce8e1;
+  font-size: 20px;
+  color: #34c9a4;
+  padding: 17px 12px;
   float: right;
   margin-top: 10px;
 }
 
-/* #nav-bar .button:hover {
+ #nav-bar .button:hover {
   border: 1px solid black;
   border-radius: 5px;
-  background-color: #e4f8ff
-  font-size: 2em;
-  color: #baeeff;
-  padding: 20px 15px;
+  background-color: #e4f8ff;
+  font-size: 20px;
+  color: black;
+  padding: 17px 12px;
   float: right;
   margin-top: 10px;
-} */
+}
