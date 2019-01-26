@@ -1,10 +1,26 @@
-#tweets-container {
-  border: 1px solid #F3F3F3;
+#tweets-container .tweets {
+  border: 1px solid rgb(221, 221, 221);
   border-radius: 5px;
+}
+
+#tweets-container footer {
+  border: 1px solid #F3F3F3;
+  border-bottom: 1px solid rgb(211, 211, 211);
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  padding: 10px;
+}
+
+#tweets-container .tweet {
+  border-top: none;
+  border-bottom: #e2e2e2;
 }
 
 #tweets-container header {
   background-color: #F5F5F5;
+  border-radius: 5px 5px 0px 0px;
+  border-bottom: none;
+  color: rgb(129, 129, 129);
   height: 70px;
   padding: 10px;
 }
@@ -37,18 +53,7 @@
   /*border: 1px solid #DCDCDC;*/
 }
 
-#tweets-container footer {
-  border-top: 1px solid #F3F3F3;
-  padding: 5px;
-}
-
-/*#tweetContainer:hover {
-  border: 1px solid #E8E8E8;
+.tweets:hover {
+  border: 1px solid rgb(0, 0, 0);
   border-radius: 5px;
-
-  header {
-    background-color: #E8E8E8;
-    height: 70px;
-    padding: 10px;
-  }
-}*/
+}

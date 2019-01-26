@@ -69,7 +69,7 @@ $(document).ready(function() {
       return div.innerHTML;
     }
 
-    const html = `<article class="tweet">
+    const html = `<article class="tweets">
       <header>
         <img class="thumbnail" src="${data.user.avatars.small}">
         <h2>${data.user.name}</h2>

@@ -27,9 +27,20 @@
   border: 1px solid black;
   border-radius: 5px;
   background-color: #baeeff
-  color: #e8fdff;
-  padding-top: 15px;
-  padding-bottom: 15px;
+  font-size: 2em;
+  color: #baeeff;
+  padding: 20px 15px;
   float: right;
-  margin-top: 15px;
+  margin-top: 10px;
+}
+
+#nav-bar .button:hover {
+  border: 1px solid black;
+  border-radius: 5px;
+  background-color: #e4f8ff
+  font-size: 2em;
+  color: #baeeff;
+  padding: 20px 15px;
+  float: right;
+  margin-top: 10px;
 }
