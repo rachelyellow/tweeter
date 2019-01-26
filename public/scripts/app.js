@@ -52,7 +52,7 @@ $(document).ready(function() {
       renderTweets(response)
     })
     .fail(() => {
-      console.err('hello?')
+      console.err('Oops! Looks like something went wrong. Please try again.')
     })
   }
 
@@ -78,6 +78,9 @@ $(document).ready(function() {
       </article>
       <footer>
         ${data.created_at}
+        <i class="fa fa-flag" class="icon"></i>
+        <i class="fa fa-retweet" class="icon"></i>
+        <i class="fa fa-heart" class="icon"></i>
       </footer>
     </article>`;
     return $(html);

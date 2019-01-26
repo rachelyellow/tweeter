@@ -1,13 +1,19 @@
 #tweets-container .tweets {
   border: 1px solid rgb(221, 221, 221);
   border-radius: 5px;
+  color: rgb(129, 129, 129);
+}
+
+#tweets-container i {
+  color: white;
+  float: right;
+  padding-left: 5px;
 }
 
 #tweets-container header {
-  background-color: #F5F5F5;
+  background-color: #eaedec;
   border-radius: 5px 5px 0px 0px;
   border-bottom: none;
-  color: rgb(129, 129, 129);
   height: 70px;
   padding: 10px;
 }
@@ -46,5 +52,10 @@
   border-bottom: 1px solid rgb(221, 221, 221);
 }
 #tweets-container .tweets:hover {
-  filter: brightness(85%);
+  filter: brightness(95%);
+  color: black;
+}
+
+#tweets-container .tweets:hover footer i {
+  color: #95e5d2;
 }
