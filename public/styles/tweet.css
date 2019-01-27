@@ -2,12 +2,14 @@
   border: 1px solid rgb(221, 221, 221);
   border-radius: 5px;
   color: rgb(129, 129, 129);
+  margin-top: 10px;
 }
 
 #tweets-container i {
   color: white;
   float: right;
   padding-left: 5px;
+  font-size: 1em;
 }
 
 #tweets-container header {
@@ -30,26 +32,26 @@
   width: 50%;
 }
 
-#tweets-container p {
+#tweets-container header p {
   font-size: small;
-  margin-top: 10px;
-  margin-bottom: 20px;
-  margin-right: 0px;
+  margin: 10px 0px 0px;
   float: right;
   text-align: right;
 }
 #tweets-container footer {
+  font-size: small;
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
   padding: 10px;
 }
 
 #tweets-container .tweet {
-  padding-left: 10px;
-  padding-right: 10px;
-  padding-top: 35px;
-  padding-bottom: 30px;
+  padding: 35px 15px;
+  color: #171f33;
+  font-size: 1em;
+  overflow-wrap: break-word;
   border-bottom: 1px solid rgb(221, 221, 221);
+
 }
 #tweets-container .tweets:hover {
   filter: brightness(95%);

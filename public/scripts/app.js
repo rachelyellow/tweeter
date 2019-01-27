@@ -12,12 +12,12 @@ $(document).ready(function() {
 
     if (tweetMessage === "") {
 
-      tweetErrorMessage.text("Cannot post an empty tweet.");
+      tweetErrorMessage.text("Cannot post an empty tweet.  ");
       tweetErrorMessage.slideDown('fast');
 
     } else if (tweetMessage.length > 140) {
 
-      tweetErrorMessage.text("The maximum tweet length is 140 characters.")
+      tweetErrorMessage.text("The maximum tweet length is 140 characters.  ")
       tweetErrorMessage.slideDown('fast');
 
     } else {
@@ -62,8 +62,7 @@ $(document).ready(function() {
     }
 
     // updates approximate post time in footer
-    const createdAt = data.created_at;
-    const timeAgo = jQuery.timeago(createdAt - (Date.now() - createdAt));
+    const timeAgo = jQuery.timeago(data.created_at);
 
     const html = `<article class="tweets">
       <header>

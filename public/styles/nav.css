@@ -21,7 +21,7 @@
   padding-bottom: 20px;
   font-size: 200%;
   left: 10px;
-  bottom: 30px;
+  bottom: 17px;
 }
 
 #nav-bar .button {
@@ -37,11 +37,6 @@
 
  #nav-bar .button:hover {
   border: 1px solid black;
-  border-radius: 5px;
   background-color: #e4f8ff;
-  font-size: 20px;
   color: black;
-  padding: 17px 12px;
-  float: right;
-  margin-top: 10px;
 }
