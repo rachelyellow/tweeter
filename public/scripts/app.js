@@ -1,9 +1,3 @@
-/*
- * Client-side JS logic goes here
- * jQuery is already loaded
- * Reminder: Use (and do all your DOM work in) jQuery's document ready function
- */
-
 $(document).ready(function() {
 
   const $form = $('form');
@@ -67,6 +61,10 @@ $(document).ready(function() {
       return div.innerHTML;
     }
 
+    // updates approximate post time in footer
+    const createdAt = data.created_at;
+    const timeAgo = jQuery.timeago(createdAt - (Date.now() - createdAt));
+
     const html = `<article class="tweets">
       <header>
         <img class="thumbnail" src="${data.user.avatars.small}">
@@ -77,7 +75,7 @@ $(document).ready(function() {
         ${escape(data.content.text)}
       </article>
       <footer>
-        ${data.created_at}
+        ${timeAgo}
         <i class="fa fa-flag" class="icon"></i>
         <i class="fa fa-retweet" class="icon"></i>
         <i class="fa fa-heart" class="icon"></i>
